@@ -1,0 +1,8 @@
+en/stqa/pft/sandbox/MyFirstProgram.java
+ en.stqa.pft.sandbox.MyFirstProgram
+en/stqa/pft/sandbox/Point.java
+ en.stqa.pft.sandbox.Point
+en/stqa/pft/sandbox/Rectangle.java
+ en.stqa.pft.sandbox.Rectangle
+en/stqa/pft/sandbox/Square.java
+ en.stqa.pft.sandbox.Square

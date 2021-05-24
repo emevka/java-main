@@ -1,0 +1,4 @@
+en/stqa/pft/sandbox/SquareTests.java
+ en.stqa.pft.sandbox.SquareTests
+en/stqa/pft/sandbox/PointTests.java
+ en.stqa.pft.sandbox.PointTests
