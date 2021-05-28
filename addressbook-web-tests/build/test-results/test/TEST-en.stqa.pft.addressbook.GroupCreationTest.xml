@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="en.stqa.pft.addressbook.GroupCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-28T11:53:01" hostname="10C00254.local" time="1.57">
+  <properties/>
+  <testcase name="testGroupCreation" classname="en.stqa.pft.addressbook.GroupCreationTest" time="1.57"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1622202777755	geckodriver	INFO	Listening on 127.0.0.1:33685
+1622202778161	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "0" "-foreground" "-no-remote" "-profile" "/var/folders/7g/0bg7rp_d0k15pkfnvknzjljw0000gp/T/rust_mozprofiletqQuLW"
+1622202778675	Marionette	INFO	Marionette enabled
+2021-05-28 13:52:59.754 firefox-bin[10497:177903] Warning: Expected min height of view: (<NSButton: 0x126223400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-05-28 13:52:59.755 firefox-bin[10497:177903] Warning: Expected min height of view: (<NSButton: 0x1336eec00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-05-28 13:52:59.755 firefox-bin[10497:177903] Warning: Expected min height of view: (<NSButton: 0x1336f2800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-05-28 13:52:59.756 firefox-bin[10497:177903] Warning: Expected min height of view: (<NSButton: 0x1336f1800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-05-28 13:52:59.756 firefox-bin[10497:177903] Warning: Expected min height of view: (<NSButton: 0x1336ef800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-05-28 13:52:59.757 firefox-bin[10497:177903] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x1336f3400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-05-28 13:52:59.758 firefox-bin[10497:177903] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x1336fcc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+DevTools listening on ws://localhost:63192/devtools/browser/d186289f-1972-d34e-a1cc-587bdda5e140
+1622202780834	Marionette	INFO	Listening on port 63155
+1622202780926	Marionette	WARN	TLS certificate errors will be ignored for this session
+May 28, 2021 1:53:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
