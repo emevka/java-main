@@ -1,6 +1,10 @@
-en/stqa/pft/addressbook/GroupCreationTest.java
- en.stqa.pft.addressbook.GroupCreationTest
-en/stqa/pft/addressbook/GroupData.java
- en.stqa.pft.addressbook.GroupData
 en/stqa/pft/addressbook/ContactCreation.java
  en.stqa.pft.addressbook.ContactCreation
+en/stqa/pft/addressbook/GroupData.java
+ en.stqa.pft.addressbook.GroupData
+en/stqa/pft/addressbook/GroupDeletion.java
+ en.stqa.pft.addressbook.GroupDeletion
+en/stqa/pft/addressbook/TestBase.java
+ en.stqa.pft.addressbook.TestBase
+en/stqa/pft/addressbook/GroupCreationTest.java
+ en.stqa.pft.addressbook.GroupCreationTest
