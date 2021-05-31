@@ -23,25 +23,25 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">2</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.244s</div>
+<div class="counter">1.060s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,105 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="setUp"></a>
-<h3 class="failures">setUp</h3>
-<span class="code">
-<pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//localhost/addressbook/group.php&amp;c=UTF-8&amp;d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20localhost.
-Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
-System info: host: '10C00254.local', ip: 'fe80:0:0:0:c6c:db13:7b8d:5b50%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '16.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [dd1e479c-e1cf-7b44-a61c-c957ff4713f9, get {url=http://localhost/addressbook/group.php}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210504152106, moz:debuggerAddress: localhost:56093, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9928, moz:profile: /var/folders/7g/0bg7rp_d0k1..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.4.0, rotatable: false, se:cdp: ws://localhost:56093/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: dd1e479c-e1cf-7b44-a61c-c957ff4713f9
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:333)
-	at en.stqa.pft.addressbook.appmanager.ApplicationManager.init(ApplicationManager.java:18)
-	at en.stqa.pft.addressbook.tests.TestBase.setUp(TestBase.java:13)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:135)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -170,45 +78,40 @@ Session ID: dd1e479c-e1cf-7b44-a61c-c957ff4713f9
 </tr>
 </thead>
 <tr>
-<td class="failures">setUp</td>
-<td class="failures">3.244s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="skipped">testGroupCreation</td>
-<td class="skipped">-</td>
-<td class="skipped">ignored</td>
+<td class="success">testGroupCreation</td>
+<td class="success">1.060s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1622474511718	geckodriver	INFO	Listening on 127.0.0.1:46560
-1622474511913	mozrunner::runner	INFO	Running command: &quot;/Applications/Firefox.app/Contents/MacOS/firefox-bin&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;0&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;/var/folders/7g/0bg7rp_d0k15pkfnvknzjljw0000gp/T/rust_mozprofileSo8dxL&quot;
-1622474512406	Marionette	INFO	Marionette enabled
-2021-05-31 17:21:53.418 firefox-bin[9928:245636] Warning: Expected min height of view: (&lt;NSButton: 0x12f41d800&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
-2021-05-31 17:21:53.419 firefox-bin[9928:245636] Warning: Expected min height of view: (&lt;NSButton: 0x13c8d1800&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
-2021-05-31 17:21:53.419 firefox-bin[9928:245636] Warning: Expected min height of view: (&lt;NSButton: 0x13c8d0400&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
-2021-05-31 17:21:53.420 firefox-bin[9928:245636] Warning: Expected min height of view: (&lt;NSButton: 0x13c8cd800&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
-2021-05-31 17:21:53.421 firefox-bin[9928:245636] Warning: Expected min height of view: (&lt;NSButton: 0x13c8cdc00&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
-2021-05-31 17:21:53.421 firefox-bin[9928:245636] Warning: Expected min height of view: (&lt;NSPopoverTouchBarItemButton: 0x13c8d2c00&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
-2021-05-31 17:21:53.422 firefox-bin[9928:245636] Warning: Expected min height of view: (&lt;NSPopoverTouchBarItemButton: 0x13c8dbc00&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+1622474953541	geckodriver	INFO	Listening on 127.0.0.1:7052
+1622474953749	mozrunner::runner	INFO	Running command: &quot;/Applications/Firefox.app/Contents/MacOS/firefox-bin&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;0&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;/var/folders/7g/0bg7rp_d0k15pkfnvknzjljw0000gp/T/rust_mozprofilePIcQDn&quot;
+1622474954243	Marionette	INFO	Marionette enabled
+2021-05-31 17:29:15.280 firefox-bin[10532:253362] Warning: Expected min height of view: (&lt;NSButton: 0x12e26ac00&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-05-31 17:29:15.281 firefox-bin[10532:253362] Warning: Expected min height of view: (&lt;NSButton: 0x13a2a2400&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-05-31 17:29:15.281 firefox-bin[10532:253362] Warning: Expected min height of view: (&lt;NSButton: 0x13a2a3400&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-05-31 17:29:15.282 firefox-bin[10532:253362] Warning: Expected min height of view: (&lt;NSButton: 0x13a2a1800&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-05-31 17:29:15.282 firefox-bin[10532:253362] Warning: Expected min height of view: (&lt;NSButton: 0x13a2a0000&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-05-31 17:29:15.283 firefox-bin[10532:253362] Warning: Expected min height of view: (&lt;NSPopoverTouchBarItemButton: 0x13a2a3c00&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-05-31 17:29:15.283 firefox-bin[10532:253362] Warning: Expected min height of view: (&lt;NSPopoverTouchBarItemButton: 0x13a5cd400&gt;) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
 console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new Error(&quot;&quot;, &quot;(unknown module)&quot;))
-DevTools listening on ws://localhost:56093/devtools/browser/6149b5ad-005f-6d4b-85c1-a23e3b411a69
-1622474514432	Marionette	INFO	Listening on port 56060
-1622474514479	Marionette	WARN	TLS certificate errors will be ignored for this session
-May 31, 2021 5:21:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+DevTools listening on ws://localhost:56737/devtools/browser/f0094f61-7ea0-b741-9d44-15759f7b58c0
+1622474956262	Marionette	INFO	Listening on port 56702
+1622474956320	Marionette	WARN	TLS certificate errors will be ignored for this session
+May 31, 2021 5:29:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-1622474514694	Marionette	INFO	Stopped listening on port 56060
+1622474958182	Marionette	INFO	Stopped listening on port 56702
 !!! error running onStopped callback: TypeError: callback is not a function
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
-1622474516909	RemoteAgent	ERROR	unable to stop listener: [Exception... &quot;Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]&quot;  nsresult: &quot;0x8000ffff (NS_ERROR_UNEXPECTED)&quot;  location: &quot;JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64&quot;  data: no] Stack trace: stop()@TargetObserver.jsm:64
+1622474958529	RemoteAgent	ERROR	unable to stop listener: [Exception... &quot;Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]&quot;  nsresult: &quot;0x8000ffff (NS_ERROR_UNEXPECTED)&quot;  location: &quot;JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64&quot;  data: no] Stack trace: stop()@TargetObserver.jsm:64
 unwatchForTabs()@TargetList.jsm:70
 unwatchForTargets()@TargetList.jsm:37
 destructor()@TargetList.jsm:109
@@ -224,7 +127,7 @@ close()@RemoteAgent.jsm:136
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.0</a> at 31 May 2021, 17:21:57</p>
+<a href="http://www.gradle.org">Gradle 7.0</a> at 31 May 2021, 17:29:18</p>
 </div>
 </div>
 </body>
