@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.safari.SafariDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -27,8 +28,8 @@ public class ApplicationManager {
       wd = new FirefoxDriver();
     } else if (browser.equals(BrowserType.CHROME)) {
       wd = new ChromeDriver();
-    } else if (browser.equals(BrowserType.EDGE)) {
-      wd = new EdgeDriver();
+    } else if (browser.equals(BrowserType.SAFARI)) {
+      wd = new SafariDriver();
     }
 
     wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
