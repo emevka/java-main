@@ -2,12 +2,13 @@ package en.stqa.pft.sandbox.appmanager;
 
 import en.stqa.pft.sandbox.model.ContactData;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class ContactHelper extends HelperBase{
+
+  private ContactData contactData;
 
   public ContactHelper(WebDriver wd) {
     super(wd);
@@ -53,4 +54,13 @@ public class ContactHelper extends HelperBase{
     public void selectName () {
       click(By.name("firstname"));
     }
+
+  public void createAContact(ContactData contact1, boolean creation) {
+    fillinContactPage(new ContactData("name", "surname", "company", "address", "phone", "email", "1"), false);
+    submitContact();
+  }
+
+  public boolean isThereAContact() {
+    return isElementPresent(By.xpath("//input[@name='selected[]']"));
+  }
 }
