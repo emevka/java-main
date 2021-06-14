@@ -9,6 +9,7 @@ import org.testng.Assert;
 public class ContactHelper extends HelperBase{
 
   private ContactData contactData;
+  private ContactData contact;
 
   public ContactHelper(WebDriver wd) {
     super(wd);
@@ -55,8 +56,11 @@ public class ContactHelper extends HelperBase{
       click(By.name("firstname"));
     }
 
-  public void createAContact(ContactData contact1, boolean creation) {
-    fillinContactPage(new ContactData("name", "surname", "company", "address", "phone", "email", "1"), false);
+    public void addContact () { click(By.linkText("add new"));}
+
+  public void createAContact(ContactData contact) {
+    addContact();
+    fillinContactPage(new ContactData(new ContactData("2name", "2surname", "2company", "2address", "2phone", "2email", null), false));
     submitContact();
   }
 
