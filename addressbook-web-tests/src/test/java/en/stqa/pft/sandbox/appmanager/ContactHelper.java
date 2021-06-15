@@ -24,10 +24,10 @@ public class ContactHelper extends HelperBase{
     type(By.name("email"), contactData.getEmail());
 
     if (creation) {
-      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
-    } else {
-      Assert.assertFalse(isElementPresent(By.name("new_group")));
-    }
+     new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+   } else {
+   Assert.assertFalse(isElementPresent(By.name("new_group")));
+   }
   }
 
     public void submitContact () {
@@ -60,7 +60,7 @@ public class ContactHelper extends HelperBase{
 
   public void createAContact(ContactData contact) {
     addContact();
-    fillinContactPage(new ContactData(new ContactData("2name", "2surname", "2company", "2address", "2phone", "2email", null), false));
+    fillinContactPage (contact, true);
     submitContact();
   }
 

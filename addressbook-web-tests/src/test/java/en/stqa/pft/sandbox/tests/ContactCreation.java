@@ -8,8 +8,6 @@ public class ContactCreation extends TestBase{
   @Test
   public void tContactCreation() {
     app.getNavigationHelper().gotoContactPage();
-    if (! app.getContactHelper().isThereAContact()) {
-    app.getContactHelper().createAContact(new ContactData("name", "surname", "company", "address", "phone", "email", "1test"), true);
-  }
-  }
+    app.getContactHelper().createAContact(new ContactData("2name", "2surname", "2company", "2address", "2phone", "2email", "1test"));
+     }
 }
