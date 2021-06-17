@@ -1,30 +1,30 @@
-en/stqa/pft/sandbox/tests/GroupCreationTest.java
- en.stqa.pft.sandbox.tests.GroupCreationTest
-en/stqa/pft/sandbox/tests/ContactModificationTests.java
- en.stqa.pft.sandbox.tests.ContactModificationTests
-en/stqa/pft/sandbox/appmanager/ApplicationManager.java
- en.stqa.pft.sandbox.appmanager.ApplicationManager
+en/stqa/pft/sandbox/appmanager/ContactHelper.java
+ en.stqa.pft.sandbox.appmanager.ContactHelper
+en/stqa/pft/sandbox/appmanager/NavigationHelper.java
+ en.stqa.pft.sandbox.appmanager.NavigationHelper
+en/stqa/pft/sandbox/appmanager/SessionHelper.java
+ en.stqa.pft.sandbox.appmanager.SessionHelper
 en/stqa/pft/sandbox/appmanager/HelperBase.java
  en.stqa.pft.sandbox.appmanager.HelperBase
+en/stqa/pft/sandbox/model/ContactData.java
+ en.stqa.pft.sandbox.model.ContactData
+en/stqa/pft/sandbox/tests/ContactCreation.java
+ en.stqa.pft.sandbox.tests.ContactCreation
+en/stqa/pft/sandbox/appmanager/GroupHelper.java
+ en.stqa.pft.sandbox.appmanager.GroupHelper
+en/stqa/pft/sandbox/tests/ContactModificationTests.java
+ en.stqa.pft.sandbox.tests.ContactModificationTests
+en/stqa/pft/sandbox/tests/ContactDeletion.java
+ en.stqa.pft.sandbox.tests.ContactDeletion
+en/stqa/pft/sandbox/appmanager/ApplicationManager.java
+ en.stqa.pft.sandbox.appmanager.ApplicationManager
 en/stqa/pft/sandbox/tests/TestBase.java
  en.stqa.pft.sandbox.tests.TestBase
 en/stqa/pft/sandbox/model/GroupData.java
  en.stqa.pft.sandbox.model.GroupData
 en/stqa/pft/sandbox/tests/GroupModificationTests.java
  en.stqa.pft.sandbox.tests.GroupModificationTests
-en/stqa/pft/sandbox/model/ContactData.java
- en.stqa.pft.sandbox.model.ContactData
-en/stqa/pft/sandbox/appmanager/ContactHelper.java
- en.stqa.pft.sandbox.appmanager.ContactHelper
-en/stqa/pft/sandbox/appmanager/GroupHelper.java
- en.stqa.pft.sandbox.appmanager.GroupHelper
-en/stqa/pft/sandbox/tests/ContactDeletion.java
- en.stqa.pft.sandbox.tests.ContactDeletion
-en/stqa/pft/sandbox/appmanager/SessionHelper.java
- en.stqa.pft.sandbox.appmanager.SessionHelper
-en/stqa/pft/sandbox/appmanager/NavigationHelper.java
- en.stqa.pft.sandbox.appmanager.NavigationHelper
 en/stqa/pft/sandbox/tests/GroupDeletionTests.java
  en.stqa.pft.sandbox.tests.GroupDeletionTests
-en/stqa/pft/sandbox/tests/ContactCreation.java
- en.stqa.pft.sandbox.tests.ContactCreation
+en/stqa/pft/sandbox/tests/GroupCreationTest.java
+ en.stqa.pft.sandbox.tests.GroupCreationTest
