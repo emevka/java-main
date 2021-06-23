@@ -1,15 +1,17 @@
 package en.stqa.pft.sandbox.appmanager;
 
 import en.stqa.pft.sandbox.model.ContactData;
+import en.stqa.pft.sandbox.model.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-public class ContactHelper extends HelperBase{
+import java.util.ArrayList;
+import java.util.List;
 
-  private ContactData contactData;
-  private ContactData contact;
+public class ContactHelper extends HelperBase{
 
   public ContactHelper(WebDriver wd) {
     super(wd);
@@ -31,10 +33,10 @@ public class ContactHelper extends HelperBase{
   }
 
     public void submitContact () {
-      click(By.xpath("(//input[@name='submit'])[2]"));
+      click(By.xpath("(//input[@name='submit'])"));
     }
 
-    public void selectContact () { click(By.xpath("//input[@name='selected[]']")); }
+    public void selectContact (int index) { wd.findElements(By.name ("selected[]")).get(index).click(); }
 
     public void deleteContact () {
       click(By.xpath("(//input[@value='Delete'])"));
@@ -66,5 +68,21 @@ public class ContactHelper extends HelperBase{
 
   public boolean isThereAContact() {
     return isElementPresent(By.xpath("//input[@name='selected[]']"));
+  }
+
+  public List<ContactData> getContactList() {
+    List<ContactData> contacts = new ArrayList<ContactData>();
+    List<WebElement> elements = wd.findElements(By.name("span.contact"));
+    for (WebElement element : elements) {
+      String name = element.getText();
+      int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+      ContactData contact = new ContactData(name,null, null, null, null,null, null);
+      contacts.add(contact);
+    }
+    return contacts;
+  }
+
+  public int getContactCount() {
+    return wd.findElements(By.name("selected[]")).size();
   }
 }
