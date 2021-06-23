@@ -1,19 +1,17 @@
 package en.stqa.pft.sandbox.tests;
 
 import en.stqa.pft.sandbox.model.ContactData;
-import en.stqa.pft.sandbox.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 
 public class ContactCreation extends TestBase{
 
-  @Test
+  @Test(enabled = false)
   public void tContactCreation() {
-    app.getNavigationHelper().gotoContactPage();
+    app.getGoTo().gotoContactPage();
     List<ContactData> before = app.getContactHelper().getContactList();
     ContactData contact = new ContactData("Ewa", "Test", null, null, null, null, null);
     app.getContactHelper().createAContact(contact);
